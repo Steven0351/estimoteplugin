@@ -1,5 +1,5 @@
 {
-  "name": "estimoteuwb",
+  "name": "estimoteplugin",
   "version": "0.0.1",
   "description": "capacitor plugin interface to estimote beacons",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "Estimoteuwb.podspec"
+    "Estimoteplugin.podspec"
   ],
   "author": "sam",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdetweil/estimoteuwb.git"
+    "url": "git+https://github.com/sdetweil/estimoteplugin.git"
   },
   "bugs": {
-    "url": "https://github.com/sdetweil/estimoteuwb/issues"
+    "url": "https://github.com/sdetweil/estimoteplugin/issues"
   },
   "keywords": [
     "capacitor",
@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
-    "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin && cd ..",
+    "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin -destination 'platform=iOS,name=iPhone' && cd ..",
     "verify:android": "cd android && ./gradlew clean build test && cd ..",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
@@ -74,5 +74,8 @@
     "android": {
       "src": "android"
     }
+  },
+  "dependencies": {
+    "@capacitor/cli": "^4.5.0"
   }
 }

@@ -11,9 +11,39 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`createManager()`](#createmanager)
+* [`startScanning(...)`](#startscanning)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### createManager()
+
+```typescript
+createManager() => Promise<any>
+```
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
+
+### startScanning(...)
+
+```typescript
+startScanning(handle: string) => Promise<any>
+```
+
+| Param        | Type                |
+| ------------ | ------------------- |
+| **`handle`** | <code>string</code> |
+
+**Returns:** <code>Promise&lt;any&gt;</code>
+
+--------------------
+
 </docgen-api>

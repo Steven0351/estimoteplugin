@@ -1,3 +1,4 @@
 export interface sduwbPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  createManager(): Promise< any>;
+  startScanning(handle: string) : Promise< any>;
 }
