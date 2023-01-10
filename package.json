@@ -77,6 +77,6 @@
   },
   "dependencies": {
     "@capacitor/cli": "^4.5.0",
-    "EsitmoteUWB_framework":"git+https://github.com/sdetweil/EsitmoteUWB_framework.git"
+    "EstimoteUWB_framework":"git+https://github.com/sdetweil/EsitmoteUWB_framework.git"
   }
 }
