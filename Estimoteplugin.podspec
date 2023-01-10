@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.author = package['author']
   s.source = { :git => package['repository']['url'], :tag => s.version.to_s }
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
-  s.vendored_frameworks ='EstimoteUWB.xcframework'
   s.ios.deployment_target  = '15.0'
+  s.vendored_framework ="ios/EstimoteUWB.xcframework"
   s.dependency 'Capacitor'
   s.swift_version = '5.1'
 end
