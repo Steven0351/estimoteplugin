@@ -12,7 +12,7 @@
     "dist/",
     "ios/Plugin/",
     "Estimoteplugin.podspec",
-    "ios/EstimoteUWB.xcframework"
+    "ios/EstimoteUWB.xcframework/"
   ],
   "author": "sam",
   "license": "MIT",
